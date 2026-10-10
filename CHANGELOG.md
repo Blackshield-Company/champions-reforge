@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here. Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2026-10-10
+
+Still early beta, not yet playtested in game.
+
+### Fixed
+- The Avenicci Forging Notes could be missing from every corpse. The quest now gives the notes to the Ash-Hand Forgebreaker by script when it starts, and checks again when he loads and when he dies (re-adding them if they are missing). Saves already on "Recover the forging notes" get the fix the next time the Forgebreaker loads.
+- If you already carry the notes, the quest advances on the next check instead of waiting for a pickup event.
+
+### Changed
+- The Forgebreaker now stands at the fort's own boss spot (with the fort's bandits) instead of the outdoor map marker. Forts without a boss spot keep the map marker. The quest marker still points at him.
+
 ## [0.1.0] - 2026-10-07
 
 Early beta. First public release. It passes every automated check in the build (Papyrus compile, plugin and dialogue validation, round trip, voice file and SEQ checks, FOMOD schema, 15-plugin series compatibility check) but has not been playtested in-game yet.

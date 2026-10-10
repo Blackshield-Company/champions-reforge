@@ -12,19 +12,66 @@ MiscObject Property IngotSteel Auto
 MiscObject Property IngotCorundum Auto
 MiscObject Property Leather01 Auto
 Quest Property CRF_Intro Auto
+ReferenceAlias Property Breaker Auto
+ReferenceAlias Property FortBoss Auto
+{Optional: the fort's boss spot. The Forgebreaker is moved there so he stands with the fort's bandits.}
+Book Property CRF_ForgingNotes Auto
 
 Bool PendingStop = False
 
 Function Begin()
 	SetStage(10)
+	PlaceBreaker()
+	EnsureNotes()
 	SetObjectiveDisplayed(10)
 	SetObjectiveDisplayed(11)
+EndFunction
+
+; 0.1.1: the Forgebreaker was created at the fort's outdoor map marker, away from the bandits.
+Function PlaceBreaker()
+	Actor b = Breaker.GetReference() as Actor
+	ObjectReference spot = FortBoss.GetReference()
+	If b && spot
+		b.MoveTo(spot)
+		Debug.Trace("CRF_ Forgebreaker moved to the fort's boss spot")
+	ElseIf b
+		Debug.Trace("CRF_ no boss spot at this fort; Forgebreaker stays at the map marker")
+	EndIf
+EndFunction
+
+; 0.1.1: make sure the Forgebreaker carries the notes (alias-created items could go missing).
+; Called at quest start, when he loads, and when he dies. Safe to call any number of times.
+Function EnsureNotes()
+	If GetStage() != 10
+		Return
+	EndIf
+	Actor b = Breaker.GetReference() as Actor
+	Actor player = Game.GetPlayer()
+	ObjectReference n = Notes.GetReference()
+	If player.GetItemCount(CRF_ForgingNotes) > 0
+		NotesTaken()
+		Return
+	EndIf
+	If !b
+		Debug.Trace("CRF_ EnsureNotes: no Forgebreaker")
+		Return
+	EndIf
+	If b.GetItemCount(CRF_ForgingNotes) > 0
+		Return
+	EndIf
+	If !n
+		n = b.PlaceAtMe(CRF_ForgingNotes, 1, True)
+		Notes.ForceRefTo(n)
+	EndIf
+	b.AddItem(n, 1, True)
+	Debug.Trace("CRF_ EnsureNotes: notes given to the Forgebreaker")
 EndFunction
 
 Function NotesTaken()
 	If GetStage() != 10
 		Return
 	EndIf
+	Debug.Trace("CRF_ notes taken")
 	SetObjectiveCompleted(11)
 	SetStage(20)
 	SetObjectiveDisplayed(20)

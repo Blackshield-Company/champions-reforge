@@ -1,24 +1,24 @@
 # Nexus Mods page: Champion's Reforge
 
-Early beta: v0.1.0 passed every automated build check but hasn't been playtested in-game. Exact upload-form values are in [NEXUS_FIELDS.md](NEXUS_FIELDS.md).
+Early beta: v0.1.1 passed every automated build check but hasn't been playtested in-game. Exact upload-form values are in [NEXUS_FIELDS.md](NEXUS_FIELDS.md).
 
 ## Page settings
 
 - **Game:** Skyrim Special Edition
 - **Mod name:** Champion's Reforge
-- **Version:** 0.1.0 (early beta)
+- **Version:** 0.1.1 (early beta)
 - **Category:** Quests and Adventures
 - **Suggested tags:** Quests, Lore-Friendly, Whiterun, Dialogue, Armour, Crafting, Civil War, ESL, No SKSE, Scripted
 - **Requirements:** none. (Civil War Champions optional, runtime only.)
 - **Permissions (suggested):** source on GitHub under MIT; allow modification with credit, no re-uploads of the archive.
-- **File to upload:** `ChampionsReforge-0.1.0.zip` (FOMOD), main file, named "Champion's Reforge".
+- **File to upload:** `ChampionsReforge-0.1.1.zip` (FOMOD), main file, named "Champion's Reforge".
 
 ## Description (paste into the BBCode editor)
 
 Same text as `nexus/crf-description.txt` in the workspace:
 
 ```bbcode
-[center][color=#e06c3c][b]EARLY RELEASE (v0.1.0)[/b]: new mod, not yet widely playtested. Please report bugs in the Bugs tab with your Papyrus log lines (grep CRF_). Source: [url=https://github.com/synthalorian/champions-reforge]GitHub[/url][/color][/center]
+[center][color=#e06c3c][b]EARLY RELEASE (v0.1.1)[/b]: new mod, not yet widely playtested. Please report bugs in the Bugs tab with your Papyrus log lines (grep CRF_). Source: [url=https://github.com/synthalorian/champions-reforge]GitHub[/url][/color][/center]
 
 [center][size=6][b]CHAMPION'S REFORGE[/b][/size]
 [size=3][i]Adrianne Avenicci has her grandfather's design for a champion's harness. Somebody stole the notes.[/i][/size][/center]
@@ -26,13 +26,13 @@ Same text as `nexus/crf-description.txt` in the workspace:
 [line]
 
 [size=4][b]Summary[/b][/size]
-[b]Status: Early beta (v0.1.0).[/b] Every automated build check passes, but it hasn't had wide in-game playtesting yet. It's playable now. Bug reports help shape 0.1.x.
+[b]Status: Early beta (v0.1.1).[/b] Every automated build check passes, but it hasn't had wide in-game playtesting yet. It's playable now. Bug reports help shape 0.1.x.
 A masterwork-smithing quest with a vanilla smith. [b]Adrianne Avenicci[/b] at Warmaiden's in Whiterun has her grandfather's design for a champion's harness, but the forging notes were stolen. Choose the side the harness is forged for, recover the notes, bring the steel, and wear a harness whose temper grows with every matching champion's piece. If you own the Anniversary Edition [b]Civil War Champions[/b] Creation, its armor of your chosen side counts too.
 
 [size=4][b]The quest[/b][/size]
 [list]
 [*][b]"Any commissions worth taking?"[/b] Ask Adrianne (level 10+). Choose [b]the Legion (dragon crest)[/b] or [b]the Stormcloaks (bear crest)[/b].
-[*][b]The forging notes[/b] are with the Ash-Hand Forgebreaker at a military fort in Whiterun, Falkreath, Haafingar, the Reach, the Pale or Hjaalmarch.
+[*][b]The forging notes[/b] are with the Ash-Hand Forgebreaker, among the bandits of a military fort in Whiterun, Falkreath, Haafingar, the Reach, the Pale or Hjaalmarch.
 [*][b]The materials[/b]: 4 steel ingots, 2 corundum ingots, 2 leather.
 [*][b]Hand it all over[/b], wait a day, collect the [b]Champion's Harness of the Dragon[/b] (health, fire resistance) or [b]of the Bear[/b] (stamina, frost resistance), and the [b]Champion's Temper[/b].
 [*][b]Masterwork (optional, any time later)[/b]: bring 3 ebony ingots and a dragon bone. A day later: the [b]Masterwork Harness[/b] and the [b]Champion's Masterwork Temper[/b].

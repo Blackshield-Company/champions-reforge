@@ -18,7 +18,7 @@ Every log line from this mod starts with `CRF_`. On each load you should see `CR
 
 ## Commission
 
-- [ ] Forgebreaker at a fort's map marker; notes on him: stage 20.
+- [ ] Forgebreaker at the fort's boss spot (or the map marker if none); the notes are on his corpse; picking them up: stage 20. Log shows 'CRF_ EnsureNotes' or 'CRF_ notes taken'.
 - [ ] Hand-over without full materials: she lists them; with them: items removed, stage 30; `wait` 24h: stage 40.
 - [ ] Collect: harness of your side added, quest completes. Wear it: Champion's Temper in Active Effects.
 

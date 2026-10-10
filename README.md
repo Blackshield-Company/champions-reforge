@@ -4,7 +4,7 @@
 
 A masterwork-smithing quest with a vanilla smith. **Adrianne Avenicci** at Warmaiden's in Whiterun has her grandfather's design for a champion's harness, but the forging notes were stolen. Choose the side the harness is forged for, recover the notes, bring the steel, and wear a harness whose temper grows with every matching champion's piece. If you own the Anniversary Edition **Civil War Champions** Creation, its armor of your chosen side counts too.
 
-**Status: v0.1.0, early beta.** It passes every automated check in the build (Papyrus compile, plugin and dialogue validation, byte-exact round trip, voice file and SEQ checks, FOMOD schema, the series compatibility check) but has not been playtested in-game yet. Expect rough edges and please report what you find. See [docs/TESTING.md](docs/TESTING.md).
+**Status: v0.1.1, early beta.** It passes every automated check in the build (Papyrus compile, plugin and dialogue validation, byte-exact round trip, voice file and SEQ checks, FOMOD schema, the series compatibility check) but has not been playtested in-game yet. Expect rough edges and please report what you find. See [docs/TESTING.md](docs/TESTING.md).
 
 - Game: Skyrim Special Edition / Anniversary Edition 1.6.x (also fine on 1.5.97). Works on Windows and on Linux through Proton.
 - Requirements: none beyond the base game. No SKSE, no SkyUI, no DLC, no Creation Club content required (Civil War Champions is optional and only detected at runtime).
@@ -51,7 +51,7 @@ All 26 new lines are unvoiced, shown as subtitles, and each one ships with a sil
 
 ## Install
 
-Grab `ChampionsReforge-0.1.0.zip` from [Releases](https://github.com/synthalorian/champions-reforge/releases) (FOMOD installer).
+Grab `ChampionsReforge-0.1.1.zip` from [Releases](https://github.com/synthalorian/champions-reforge/releases) (FOMOD installer).
 
 - **Mod Organizer 2** or **Vortex**: install the zip and enable `ChampionsReforge.esp`.
 - **Manual (Linux/Proton)**: copy everything inside `00 Core/` (plugin, `Scripts/`, `SEQ/`, `Sound/`) into `.../steamapps/common/Skyrim Special Edition/Data/` and add `*ChampionsReforge.esp` to `Plugins.txt` in the Proton prefix (`.../compatdata/489830/pfx/drive_c/users/steamuser/AppData/Local/Skyrim Special Edition/`).

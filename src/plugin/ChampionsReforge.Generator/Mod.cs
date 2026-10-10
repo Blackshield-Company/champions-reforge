@@ -13,7 +13,7 @@ internal static class ModInfo
     public const string PluginName = "ChampionsReforge.esp";
     public const string Description = "Champion's Reforge: a commission for Adrianne Avenicci, a champion's harness and a temper that grows with every matching piece (also Civil War Champions armor, if installed).";
 
-    const int APlayer = 0, AAdrianne = 1, AFortLoc = 2, AFortMarker = 3, ABreaker = 4, ANotes = 5;
+    const int APlayer = 0, AAdrianne = 1, AFortLoc = 2, AFortMarker = 3, ABreaker = 4, ANotes = 5, AFortBoss = 6;
 
     public static void Build(Kit k)
     {
@@ -92,12 +92,21 @@ internal static class ModInfo
         main.Aliases.Add(MarkerOf(AFortMarker, "FortMarker", AFortLoc));
         main.Aliases.Add(Created(ABreaker, "Breaker", breaker.FormKey, AFortMarker, false, Level.Hard, QuestAlias.Flag.StoresText));
         main.Aliases.Add(Created(ANotes, "Notes", notes.FormKey, ABreaker, true, Level.Easy, QuestAlias.Flag.QuestObject));
+        // 0.1.1: the fort's own boss spot (optional). The script moves the Forgebreaker there so he stands with the fort's bandits.
+        main.Aliases.Add(new QuestAlias
+        {
+            ID = AFortBoss, Type = QuestAlias.TypeEnum.Reference, Name = "FortBoss",
+            Flags = QuestAlias.Flag.Optional | QuestAlias.Flag.AllowDead | QuestAlias.Flag.AllowDisabled,
+            Location = new LocationAliasReference { AliasID = AFortLoc, RefType = N<ILocationReferenceTypeGetter>(RefTypeBoss) },
+        });
         main.NextAliasID = (uint)main.Aliases.Count;
         main.VirtualMachineAdapter = Vmad.QuestAdapter(Vmad.Script("CRF_MainScript",
                 Vmad.Alias("Notes", qMain, ANotes), Vmad.Obj("CRF_State", gState), Vmad.Obj("CRF_Side", gSide), Vmad.Obj("CRF_TemperTier", gTier),
                 Vmad.Obj("CRF_HarnessDragon", hDragon.FormKey), Vmad.Obj("CRF_HarnessBear", hBear.FormKey),
                 Vmad.Obj("IngotSteel", IngotSteel), Vmad.Obj("IngotCorundum", IngotCorundum), Vmad.Obj("Leather01", Leather01),
-                Vmad.Obj("CRF_Intro", qIntro)))
+                Vmad.Obj("CRF_Intro", qIntro), Vmad.Alias("Breaker", qMain, ABreaker), Vmad.Alias("FortBoss", qMain, AFortBoss),
+                Vmad.Obj("CRF_ForgingNotes", notes.FormKey)))
+            .WithAliasScripts(qMain, ABreaker, Vmad.Script("CRF_BreakerAliasScript"))
             .WithAliasScripts(qMain, ANotes, Vmad.Script("CRF_NotesAliasScript"))
             .WithAliasScripts(qMain, AAdrianne, Vmad.Script("CRF_AdrianneAliasScript"));
 
