@@ -83,6 +83,13 @@ set CRF_MinLevel to 10
 
 Current build: 68 new records (FormIDs 800-843): Armor 4, Book 1, DialogBranch 5, DialogResponses 17, DialogTopic 8, FormList 1, GlobalFloat 8, MagicEffect 2, Message 3, Npc 1, ObjectEffect 4, Quest 2, Spell 12; 12 Papyrus scripts; 26 silent voice files; 1 SEQ entry.
 
+## Support
+
+Donations are optional. Nothing in the mod is gated on them.
+
+- GitHub Sponsors: https://github.com/sponsors/synthalorian
+- Ko-fi: https://ko-fi.com/synthalorian
+
 ## Credits
 
 - Built with [Mutagen](https://github.com/Mutagen-Modding/Mutagen) and [russo-2025/papyrus-compiler](https://github.com/russo-2025/papyrus-compiler).
