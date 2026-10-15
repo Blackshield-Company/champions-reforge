@@ -87,3 +87,10 @@ Current build: 68 new records (FormIDs 800-843): Armor 4, Book 1, DialogBranch 5
 
 - Built with [Mutagen](https://github.com/Mutagen-Modding/Mutagen) and [russo-2025/papyrus-compiler](https://github.com/russo-2025/papyrus-compiler).
 - Skyrim and every referenced vanilla record and mesh belong to Bethesda Softworks. This mod references them from Skyrim.esm and ships no Bethesda assets. Civil War Champions is a Creation by Borja "Borx25" Franco and Kris Takahashi; it is referenced at runtime only.
+
+## Support
+
+Donations are optional. Nothing in the mod is gated on them.
+
+- GitHub Sponsors: https://github.com/sponsors/synthalorian
+- Ko-fi: https://ko-fi.com/synthalorian
