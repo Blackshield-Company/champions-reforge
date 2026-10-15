@@ -1,3 +1,5 @@
+![champions-reforge](.github/preview.png)
+
 # Champion's Reforge
 
 *Adrianne Avenicci has her grandfather's design for a champion's harness. Somebody stole the notes.*
