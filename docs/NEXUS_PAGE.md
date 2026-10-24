@@ -18,7 +18,7 @@ Early beta: v0.1.1 passed every automated build check but hasn't been playtested
 Same text as `nexus/crf-description.txt` in the workspace:
 
 ```bbcode
-[center][color=#e06c3c][b]EARLY RELEASE (v0.1.1)[/b]: new mod, not yet widely playtested. Please report bugs in the Bugs tab with your Papyrus log lines (grep CRF_). Source: [url=https://github.com/synthalorian/champions-reforge]GitHub[/url][/color][/center]
+[center][color=#e06c3c][b]EARLY RELEASE (v0.1.1)[/b]: new mod, not yet widely playtested. Please report bugs in the Bugs tab with your Papyrus log lines (grep CRF_). Source: [url=https://github.com/Blackshield-Company/champions-reforge]GitHub[/url][/color][/center]
 
 [center][size=6][b]CHAMPION'S REFORGE[/b][/size]
 [size=3][i]Adrianne Avenicci has her grandfather's design for a champion's harness. Somebody stole the notes.[/i][/size][/center]
@@ -95,7 +95,7 @@ Install with [b]Mod Organizer 2[/b] or [b]Vortex[/b] (FOMOD installer) and enabl
 As with any scripted mod, finish the quest before removing it.
 
 [size=4][b]Source[/b][/size]
-Open source (MIT): [url=https://github.com/synthalorian/champions-reforge]github.com/synthalorian/champions-reforge[/url]
+Open source (MIT): [url=https://github.com/Blackshield-Company/champions-reforge]github.com/Blackshield-Company/champions-reforge[/url]
 
 [size=4][b]Credits[/b][/size]
 [list]
