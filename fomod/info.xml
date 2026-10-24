@@ -3,7 +3,7 @@
   <Name>Champion's Reforge</Name>
   <Author>synthalorian</Author>
   <Version>@VERSION@</Version>
-  <Website>https://github.com/synthalorian/champions-reforge</Website>
+  <Website>https://github.com/Blackshield-Company/champions-reforge</Website>
   <Description>A commission for Adrianne Avenicci: pick a side, recover stolen forging notes, and wear a champion's harness that tempers with every matching piece. Upgrades the Civil War Champions armor (Anniversary Edition) at runtime if you own it. Unvoiced dialogue. No SKSE, no hard DLC/CC master. Early beta.</Description>
   <Groups>
     <element>Quests and Adventures</element>
